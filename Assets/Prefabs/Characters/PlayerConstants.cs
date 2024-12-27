@@ -6,6 +6,7 @@ public class PlayerConstants : MonoBehaviour
 
     public GameObject playerObj;
     public GameObject playerCanvas;
+    public GameObject playerDots;
     public PlayerHealth playerHealth;
     public PlayerMovement playerMovement;
     public GunBasics gunBasics;
@@ -28,6 +29,7 @@ public class PlayerConstants : MonoBehaviour
         {
             Destroy(playerMovement);
             Destroy(gunBasics);
+            Destroy(playerDots);
 
             playerHealth.HPRect = HPRectOnPlayer;
         }
